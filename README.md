@@ -1,7 +1,7 @@
 # NLG-Project
 
 Writing philosophical monologues (based on Seneca) 
-It is planned to create a similar service based on the model trained on Socrates Dialogues (Plato)
+It is planned to create a similar service based on the model trained on Socratic Dialogue (Plato)
 
 Implementation: Angular-Node.js-Tensorflow.js-NLP Models. 
 Service App is deployed on production HTTP Server with Node.js ( optional on DOCKER container )
