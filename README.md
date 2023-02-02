@@ -1,4 +1,4 @@
-# NLG-Project
+# NLG-Project for lovers of philosophy and reflection
 
 Writing philosophical monologues (based on Seneca) 
 It is planned to create a similar service based on the model trained on Socratic Dialogue (Plato)
