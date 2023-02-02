@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI] version 9.1.7 (NODE.js v.14.17.0)
 
-You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container.
+You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container or .
 
 1. Install DOCKER (https://www.docker.com/products/docker-desktop/)
 
@@ -38,6 +38,21 @@ This command builds an optimized version of the application without the addition
 node server.js
 
 Once the server has started, open a new browser window and navigate to http://localhost:80
+
+## Creating the Docker Container
+
+Building the Docker Image:
+
+docker build . -t nlg-project -f Dockerfile
+
+## Running the Application
+
+Once the image has been created, create and start a new container using the command shown as below:
+
+docker run -p 80:80 -p 443:443 nlg-project
+
+Open a new browser window and navigate to http://localhost:80
+
 
 ## Development server
 
