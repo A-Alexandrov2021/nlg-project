@@ -13,11 +13,17 @@ npm install -g @angular/cli
 You can use the Node Package Manager (NPM) to install packages as below that will be need for deployment on your local machine ( )
 
 npm install @tensorflow/tfjs --save
+
 npm install jquery --save
+
 npm install bootstrap --save
+
 npm install --save-dev express@4.16.3
+
 npm install --save-dev connect-history-api-fallback@1.5.0
+
 npm install --save-dev https@1.0.0
+
 npm install --global yarn
 
 
