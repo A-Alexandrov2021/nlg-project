@@ -39,13 +39,13 @@ node server.js
 
 Once the server has started, open a new browser window and navigate to http://localhost:80
 
-## Creating the Docker Container
+# Creating the Docker Container
 
 Building the Docker Image:
 
 docker build . -t nlg-project -f Dockerfile
 
-## Running the Application
+# Running the Application
 
 Once the image has been created, create and start a new container using the command shown as below:
 
