@@ -36,12 +36,6 @@ npm install --save-dev https@1.0.0
 
 npm install --global yarn
 
-# Building the Application for Production:
-
-ng build --prod
-
-This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/ folder. In addition to the JavaScript files, there is an index.html file that has been copied from the nlg-project/src folder and modified to use the newly built files.
-
 # Starting the Production HTTP Server:
 
 node server.js
@@ -65,6 +59,12 @@ docker stop 'ContaineName'
 or
 
 docker stop 'ContainerImageID'
+
+# Building the Application for Production:
+
+ng build --prod
+
+This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/ folder. In addition to the JavaScript files, there is an index.html file that has been copied from the nlg-project/src folder and modified to use the newly built files.
 
 ## Running the Application
 
