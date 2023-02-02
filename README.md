@@ -2,15 +2,16 @@
 
 This project was generated with [Angular CLI] version 9.1.7 (NODE.js v.14.17.0)
 
+You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container.
+
+1. Install DOCKER (https://www.docker.com/products/docker-desktop/)
 
 
-To set up our environment, we first install Node.js from here (https://nodejs.org/en/download/) and Angular. 
+2. To set up the  environment, we first install Node.js from here (https://nodejs.org/en/download/) and Angular with others packages. 
 
-Please open own command line and type:
+Please open the command line and type (You can use the Node Package Manager (NPM) to install packages):
 
 npm install -g @angular/cli
-
-You can use the Node Package Manager (NPM) to install packages as below that will be need for deployment on your local machine ( )
 
 npm install @tensorflow/tfjs --save
 
@@ -26,17 +27,13 @@ npm install --save-dev https@1.0.0
 
 npm install --global yarn
 
-
-
-
-https://github.com/A-Alexandrov2021/nlg-project.git
-
+docker run --name repo nlg-project /git clone \ https://github.com/A-Alexandrov2021/nlg-project.git
 
 Building the Application for Production:
 
 ng build --prod
 
-This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/WebStore folder. In addition to the JavaScript files, there is an index.html file that has been copied from the WebStore/src folder and modified to use the newly built files.
+This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/ folder. In addition to the JavaScript files, there is an index.html file that has been copied from the nlg-project/src folder and modified to use the newly built files.
 
 Starting the Production HTTP Server:
 
