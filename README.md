@@ -3,7 +3,7 @@
 Writing philosophical monologues (based on Seneca) Implementation: Angular-Node.js-Tensorflow.js-NLP Models. 
 Service App is deployed on production HTTP Server with Node.js ( optional on DOCKER container )
 
-# It is planned to create a similar service based on the model trained on Socrates Dialogues (Plato)
+It is planned to create a similar service based on the model trained on Socrates Dialogues (Plato)
 
 This project was generated with [Angular CLI] (NODE.js v.14.17.0)
 
