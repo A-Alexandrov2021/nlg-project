@@ -1,8 +1,42 @@
 # NLG-Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This project was generated with [Angular CLI] version 9.1.7 (NODE.js v.14.17.0)
+
+
+
+To set up our environment, we first install Node.js from here (https://nodejs.org/en/download/) and Angular. 
+
+Please open own command line and type:
+
+npm install -g @angular/cli
+
+You can use the Node Package Manager (NPM) to install packages as below that will be need for deployment on your local machine ( )
+
+npm install @tensorflow/tfjs --save
+npm install jquery --save
+npm install bootstrap --save
+npm install --save-dev express@4.16.3
+npm install --save-dev connect-history-api-fallback@1.5.0
+npm install --save-dev https@1.0.0
+npm install --global yarn
+
+
+
 
 https://github.com/A-Alexandrov2021/nlg-project.git
+
+
+Building the Application for Production:
+
+ng build --prod
+
+This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/WebStore folder. In addition to the JavaScript files, there is an index.html file that has been copied from the WebStore/src folder and modified to use the newly built files.
+
+Starting the Production HTTP Server:
+
+node server.js
+
+Once the server has started, open a new browser window and navigate to http://localhost:80
 
 ## Development server
 
