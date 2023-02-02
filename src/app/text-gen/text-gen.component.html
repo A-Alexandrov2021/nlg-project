@@ -1,0 +1,31 @@
+<br/>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Input half of UI -->
+    <div class="col-2">
+      <div class="form-group">
+        <label for="nlgInputArea">Begin with some words</label>
+        <textarea #meditationInput class="form-control" id="nlgInputArea" rows="10" [value]="inputText"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <button mat-flat-button type="button" color="primary" (click)="generate(meditationInput.value)">Meditate</button>
+        </div>
+        <div class="col-sm">
+          <button mat-flat-button type="button" color="primary" (click)="reset()">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Output half of UI -->
+    <div class="col overflow-auto">
+      <p *ngFor="let textPart of genText" class="lead" [ngStyle]="{'color' : textPart[1] == 'user' ? 'red' : 'black'}" style="display:inline;white-space:pre-wrap">
+        {{textPart[0]}}
+      </p>
+    </div>
+  </div>
+</div>
