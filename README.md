@@ -45,6 +45,18 @@ Building the Docker Image:
 
 docker build . -t nlg-project -f Dockerfile
 
+# Listing the Containers
+
+docker ps
+
+# Starting and Stopping the Container
+
+docker stop 'ContaineName'
+
+or
+
+docker stop 'ContainerImageID'
+
 # Running the Application
 
 Once the image has been created, create and start a new container using the command shown as below:
