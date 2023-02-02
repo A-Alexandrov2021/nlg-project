@@ -1,5 +1,10 @@
 # NLG-Project
 
+Writing philosophical monologues (based on Seneca) Implementation: Angular-Node.js-Tensorflow.js-NLP Models. 
+Service App is deployed on production HTTP Server with Node.js ( optional on DOCKER container )
+
+## It is planned to create a similar service based on the model trained on Plato's Socratic Dialogues
+
 This project was generated with [Angular CLI] (NODE.js v.14.17.0)
 
 You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container or production HTTP Server (s. repository file  server.js)
