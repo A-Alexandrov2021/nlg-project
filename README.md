@@ -48,6 +48,14 @@ Building the Docker Image:
 
 docker build . -t nlg-project -f Dockerfile
 
+## Running the Application
+
+Once the image has been created, create and start a new container using the command shown as below:
+
+docker run -p 80:80 -p 443:443 nlg-project
+
+Open a new browser window and navigate to http://localhost:80
+
 ## Listing the Containers
 
 docker ps
@@ -65,15 +73,6 @@ docker stop 'ContainerImageID'
 ng build --prod
 
 This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/ folder. In addition to the JavaScript files, there is an index.html file that has been copied from the nlg-project/src folder and modified to use the newly built files.
-
-## Running the Application
-
-Once the image has been created, create and start a new container using the command shown as below:
-
-docker run -p 80:80 -p 443:443 nlg-project
-
-Open a new browser window and navigate to http://localhost:80
-
 
 ## Development server
 
