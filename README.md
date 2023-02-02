@@ -1,8 +1,10 @@
 # NLG-Project
 
-This project was generated with [Angular CLI] version 9.1.7 (NODE.js v.14.17.0)
+This project was generated with [Angular CLI] (NODE.js v.14.17.0)
 
-You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container or .
+You can test the running of service application in browser on the local address http://localhost:80/ by deploying from the DOCKER container or production HTTP Server (s. repository file  server.js)
+
+Required steps for deploying the application to your local machine:
 
 1. Install DOCKER (https://www.docker.com/products/docker-desktop/)
 
