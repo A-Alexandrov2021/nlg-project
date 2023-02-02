@@ -27,15 +27,13 @@ npm install --save-dev https@1.0.0
 
 npm install --global yarn
 
-docker run --name repo nlg-project /git clone \ https://github.com/A-Alexandrov2021/nlg-project.git
-
-Building the Application for Production:
+# Building the Application for Production:
 
 ng build --prod
 
 This command builds an optimized version of the application without the additions that support the development tools. The output from the build process is placed in the dist/ folder. In addition to the JavaScript files, there is an index.html file that has been copied from the nlg-project/src folder and modified to use the newly built files.
 
-Starting the Production HTTP Server:
+# Starting the Production HTTP Server:
 
 node server.js
 
