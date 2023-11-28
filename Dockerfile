@@ -1,4 +1,4 @@
-FROM node:14.17.0
+FROM node:14.21.3
 RUN mkdir -p /usr/src/nlg
 COPY dist/ /usr/src/nlg/dist
 COPY server.js /usr/src/nlg/server.js
